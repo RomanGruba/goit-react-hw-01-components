@@ -1,0 +1,44 @@
+.profile {
+  width: 250px;
+  height: 258px;
+  background-color: rgb(243, 235, 235);
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.avatar {
+  border-radius: 50%
+}
+
+.stats {
+  display: flex;
+  justify-content: stretch;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.label {
+  display: block;
+
+}
+
+
+.statsItem {
+  border: 1px solid grey;
+  width: 32%;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tag {
+  margin-bottom: 10px;
+}

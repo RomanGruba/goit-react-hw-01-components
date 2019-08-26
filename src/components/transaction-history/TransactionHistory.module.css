@@ -1,0 +1,20 @@
+.transactionHistory {
+  width: 870px;
+  text-align: center;
+  border: 1px solid grey;
+}
+
+.header {
+  background-color: blue;
+  color: #fff;
+  height: 50px;
+}
+
+.row {
+  height: 50px;
+  border-bottom: 1px solid grey;
+}
+
+.row:nth-child(even) {
+  background-color: #ecf2f3;
+}

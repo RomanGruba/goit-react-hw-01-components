@@ -1,0 +1,37 @@
+.section {
+  width: 270px;
+  border: 1px solid grey;
+  margin-bottom: 100px;
+}
+
+.title {
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  border-bottom: 1px solid grey;
+
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: stretch;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60px;
+  width: 20%;
+  border: 1px solid grey;
+  text-align: center;
+
+  background-color:
+}
+
+.label {
+  display: block;
+}

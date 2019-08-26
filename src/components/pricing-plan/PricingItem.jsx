@@ -6,7 +6,7 @@ import styles from './Pricing-plan.module.css';
 const cx = classNames.bind(styles);
 
 const PricingItem = ({ label, icon, capacity, price, description }) => (
-  <div className="pricing-item">
+  <div className={styles.pricingItem}>
     <i
       className={cx({
         icon: true,
@@ -16,11 +16,30 @@ const PricingItem = ({ label, icon, capacity, price, description }) => (
       })}
       style={{ backgroundImage: `url(${icon})` }}
     />
-    <h2 className="label">{label}</h2>
-    <p className="capacity">{capacity}</p>
-    <p className="description">{description}</p>
-    <p className="price">{price}/MO</p>
-    <button type="button">Get Started</button>
+    <h2
+      className={cx({
+        label: true,
+        bronzeLabel: label === 'Bronze',
+        silverLabel: label === 'Silver',
+        goldLabel: label === 'Gold',
+      })}
+    >
+      {label}
+    </h2>
+    <p className={styles.capacity}>{capacity}</p>
+    <p className={styles.description}>{description}</p>
+    <p className={styles.price}>{price}/MO</p>
+    <button
+      type="button"
+      className={cx({
+        button: true,
+        bronzeBtn: label === 'Bronze',
+        silverBtn: label === 'Silver',
+        goldBtn: label === 'Gold',
+      })}
+    >
+      Get Started
+    </button>
   </div>
 );
 
