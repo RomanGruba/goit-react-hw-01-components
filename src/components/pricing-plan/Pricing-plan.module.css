@@ -1,0 +1,17 @@
+.icon {
+  display: inline-block;
+  width: 200px;
+  backgroundepeat: no-repeat;
+}
+
+.bronze {
+  height: 50px;
+}
+
+.silver {
+  height: 100px;
+}
+
+.gold {
+  height: 150px;
+}
